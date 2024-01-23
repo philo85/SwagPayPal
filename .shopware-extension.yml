@@ -1,0 +1,12 @@
+# .shopware-extension.yml
+build:
+    zip:
+        composer:
+            # disable composer install, enabled by default
+            enabled: true
+        assets:
+            # disable building assets, builds by default
+            enabled: true
+
+            # all package.json of this extension will be installed with `npm install --production`, therefore, devDependencies will be ignored
+            npm_strict: true
